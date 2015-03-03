@@ -1,0 +1,19 @@
+<html ng-app="App">
+<head>
+    <meta charset="UTF-8">
+    <title>One time binding watchers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>One time binding watcher</h1>
+
+    <div ng-controller="WatchCtrl"></div>
+
+    <div ng-controller="WatchObjCtrl">
+        <p>{{ watchedValue1 }} - <a href="#" ng-click="setValue(1)">setValue(1)</a></p>
+        <p>{{ watchedValue2 }} - <a href="#" ng-click="setValue(2)">setValue(2)</a></p>
+    </div>
+
+</body>
+</html>
